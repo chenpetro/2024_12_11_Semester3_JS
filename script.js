@@ -89,6 +89,25 @@ ul.forEach(ul => {
 
 
 // 1 Створити розмітку з кнопкою та текстовим полем. За допомогою JavaScript отримати доступ до кнопки та текстового поля за їх ідентифікаторами та змінити текст на кнопці на значення текстового поля.
+
+const button = document.querySelector('#button')
+const txt = document.querySelector('#txt')
+button.textContent = txt.textContent
+
 // 2 Створити розмітку  з заголовком та зображенням. За допомогою JavaScript отримати доступ до зображення та змінити значення атрибута "src" на шлях до іншого зображення.
+
+const car = document.querySelector('#car')
+const carImg = document.querySelector('#car-img')
+carImg.src = "https://www.vehiclesuggest.com/wp-content/uploads/2024/10/Tesla-Model-3-LR-RWD.jpeg?ezimgfmt=ngcb5/notWebP"
+
 // 3 Створити розмітку  з посиланням та зображенням. За допомогою JavaScript отримати доступ до посилання та змінити значення атрибута "href" на нову URL-адресу. Також отримати доступ до зображення та додати новий атрибут "alt" з описом зображення.
+
+const carLink = document.querySelector('.car-link')
+carLink.href = "https://images.pexels.com/photos/457881/pexels-photo-457881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+carLink.alt = "This is a beautiful car from the Pexels website"
+
 // 4 Створити розмітку  зі списком елементів. За допомогою JavaScript отримати доступ до першого елемента списку та змінити його вміст на новий текст.
+
+const list = document.querySelector('.list')
+const firstItem = list.querySelector('li')
+firstItem.textContent = "Tesla Model Y"
